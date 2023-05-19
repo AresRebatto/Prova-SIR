@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova di verifica</title>
+    <script src="validazione.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form name="modulo">
+        Nome: <input type="text" name="nome" maxlength="30">
+        Cognome: <input type="text" name="cognome" maxlength="30"><br>
+        Data di nascita: <input type="date">
+        Luogo di nascita: <input type="text" name="lNascita" maxlength="20"><br>
+        Provincia: <input type="text" name="provincia" id="" maxlength="20"><br>
+        M<input type="radio" name="sesso">
+        F<input type="radio" name="sesso"><br>
+        Codice fiscale: <input type="text" maxlength="16" name="codFis"><br>
+        Numero di telefono: <input type="text" name="numeroTel" maxlength="15" onchange="VerificaNumero()">
+        Email: <input type="text" name="email" maxlength="20"><br>
+        Corso di studi:
+        <Select>
+            <option value="ingegneria" >Ingegneria</option>
+            <option value="economia">Economia</option>
+            <option value="giurisprudenza">Giurisprudenza</option>
+        </Select><br>
+        CAP: <input type="text" name="Cap"><br>
+        Studente lavoratore <input type="checkbox" name="StLav" id=""><br><br>
+        Descrizione del lavoro svolto: <br><textarea name="lavSvolto" id="" cols="30" rows="10"></textarea><br><br>
+        Foto: <input type="file" name="foto"><br><br>
+        <input type="submit" value="Invia" onclick="Validate()" class="button">
+        <input type="reset" value="Resetta scelte" class="button">
+    </form>
+</body>
+</html>

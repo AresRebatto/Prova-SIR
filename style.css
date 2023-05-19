@@ -1,0 +1,44 @@
+body
+{
+    background-color: rgb(255, 213, 226);
+    background-attachment: fixed ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+form
+{
+    background-color: white;
+    width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 1%;
+}
+
+input
+{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+select
+{
+    margin-bottom: 10px;
+}
+
+.button
+{
+    border-radius: 10px;
+    background-color: rgb(255, 190, 225);
+    border: none;
+    height: 30px;
+    position: relative;
+    left: 70%;
+}
+
+.button:hover
+{
+    background-color: rgb(252, 151, 205);
+}
